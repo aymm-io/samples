@@ -4,6 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Tangle document</title>
 
+<style type="text/css">
+body{
+        width: 75%;
+        max-width: 640px;
+        margin: 20%;
+    font-size:36px;
+    font-family:monospace;
+}
+</style> 
+
     <!-- Tangle -->
     <script type="text/javascript" src="Tangle.js"></script>
 
@@ -23,7 +33,7 @@
             
             var tangle = new Tangle(element, {
                 initialize: function () {
-                    this.number = 4;
+                    this.number = 1024;
                     this.base = 2;
                 },
                 update: function () {
@@ -42,9 +52,9 @@
     <p> </p>
 
     <p style="font-size:36px;" id="baseN">
-    	The decimal number <span data-var="number" class="TKAdjustableNumber" data-min="0" data-max="1000"> </span>,
-	<br> 
-	in base <span data-var="base" class="TKAdjustableNumber" data-min="2" data-max="36"></span> system is 
+    	The number <span data-var="number" class="TKAdjustableNumber" data-min="0" data-max="5000"></span>
+	<br>
+	in base <span data-var="base" class="TKAdjustableNumber" data-min="2" data-max="36"></span> is 
 	<br>
 	<span data-var="baseNNumber"></span>.
     </p>
